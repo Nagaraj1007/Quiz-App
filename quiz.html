@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        #que{
+            border: 2px solid gray;
+            padding: 20px;
+            font-family: Verdana;
+            font-size: 20px;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            position: fixed;
+            transform: translate(-50%,-50%);
+            z-index: 9999;
+        }
+        .option-button{
+            height: 40px;
+            padding: 5px;
+            width: 100%;
+            border: 1px solid #218380;
+            background-color: #fff;
+            color: black;
+            margin-bottom: 10px;
+            margin-left: -15px;
+            font-size: 18px;
+            font-family: verdana;
+            text-transform: capitalize;
+            text-align: left;
+            border-radius: 8px;
+        }
+        .next-button, .submit-button{
+            padding: 10px;
+            background-color: #218380;
+            border: 1px solid #218380;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            float: right;
+        }
+        .ull{
+            background-color: #218380; 
+            list-style-type: none; 
+            padding: 20px;   
+        }
+        .ull li a{
+            text-decoration: none; 
+            color: #fff;
+            font-size: 25px;
+        }
+        input{
+            height: 25px;
+            font-family: Verdana;
+            font-size: 18px;
+            border:1px solid #218380;
+            border-radius: 5px;
+        }
+        #inpbutton{
+            padding: 5px;
+            background-color: #218380;
+            border: 1px solid #218380;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="ull">
+            <li style="display: inline-block;"><a href="#">Quiz App</a></li>
+            <li style="display: block; float: right;"><a href="#">Time : <span id="timer"></span></a></li>
+        </ul>
+    </nav>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div id="que"></div>
+      </div>      
+    <script src="quiz.js"></script>
+</body>
+</html>
